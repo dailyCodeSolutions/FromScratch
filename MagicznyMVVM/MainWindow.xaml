@@ -1,0 +1,14 @@
+﻿<Window x:Class="MagicznyMVVM.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="83.156" Width="230.851"
+        xmlns:Model="clr-namespace:MagicznyMVVM.Model" Loaded="Window_Loaded">
+    <Window.DataContext>
+        <Model:Customer></Model:Customer>
+    </Window.DataContext>
+    <Grid>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="67,12,0,0" TextWrapping="Wrap" Text="{Binding Name}" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Name" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
